@@ -57,6 +57,11 @@ This project is licensed under the MIT License. See the LICENSE file for details
 The implementation is based on the Tabu Search algorithm, a metaheuristic optimization technique.
 The script uses the Python random module for generating random values.
 
+## Documentation
+
+- **Report: Exploring the Tabu Search Algorithm: An Overview and Applications**
+  This PDF report provides an in-depth overview of the Tabu Search algorithm and explores its various applications. It offers valuable insights for users who want to delve deeper into the algorithm's functioning and understand how it can be utilized in different problem domains.
+
 ## Author
 
 **Bouchana Hicham**
