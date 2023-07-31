@@ -1,43 +1,50 @@
-Tabu Search Algorithm
-This is a Python implementation of the Tabu Search algorithm. The Tabu Search is a metaheuristic optimization algorithm used for solving combinatorial optimization problems. In this implementation, the algorithm is applied to solve a specific problem involving a matrix and a set of candidate lists.
+# Tabu Search Algorithm for Matrix Optimization
 
-Problem Description
-The problem consists of a matrix of size 5x5 with certain constraints. The lower triangle half of the matrix should be set to zero. The algorithm aims to find the best solution by performing swaps on the upper triangle half of the matrix. It uses a list of candidate solutions, where each candidate solution is represented as a pair of indices in the matrix and an objective function value.
+This Python script implements the Tabu Search algorithm to optimize a square matrix. The main objective is to find the best upper triangle half of the matrix through swaps while adhering to certain constraints.
 
-Getting Started
-Clone this repository to your local machine or download the Python script.
+## Problem Description
 
-Make sure you have Python installed on your system.
+The matrix is initialized as a 5x5 square matrix with the lower triangle half set to zero. The algorithm aims to find the best solution by performing swaps on the upper triangle half of the matrix. The optimization process is based on a set of candidate lists, where each candidate list contains pairs of indices and their corresponding objective function values.
 
-Run the Python script using any Python interpreter or IDE.
+## Functions
 
-How to Use
-The script starts by initializing the matrix and the candidate list.
+- `generate_candidate_lists`: Generates random candidate lists containing pairs of indices and objective function values.
 
-The generate_candidate_lists function generates the candidate lists with random values.
+- `sort_candidate_lists`: Sorts the candidate lists based on their objective function values in descending order.
 
-The sort_candidate_lists function sorts the candidate lists based on their objective function values.
+- `Tabu_Search`: Implements the Tabu Search algorithm using the generated candidate lists. It updates the matrix and performs swaps to find the best solution, while also considering tabu restrictions to avoid repeated solutions.
 
-The main function Tabu_Search performs the Tabu Search algorithm on the candidate lists. It updates the matrix and swaps elements to find the best solution. The best objective function value found during the search is printed.
+- `Print_Matrix_Half`: Displays the upper triangle half of the matrix.
 
-The Print_Matrix_Half function displays the upper triangle half of the matrix.
+## Usage
 
-The Print_Matrix_Full function displays the full matrix.
+1. Clone the repository or download the Python script.
 
-Customization
-You can customize the initial matrix, candidate list size, and other parameters to experiment with different instances of the problem. Modify the parameters in the script and re-run it to see different results.
+2. Run the script using any Python interpreter or IDE.
 
-Important Note
-Please note that this implementation might not be fully optimized and may require further modifications or improvements for specific use cases or larger problem sizes.
+3. The script will initialize the matrix, generate candidate lists, and perform the Tabu Search optimization.
 
-Contributing
-If you find any issues or want to contribute to this project, feel free to create a pull request or open an issue on the GitHub repository.
+## Customization
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+You can modify the initial matrix, candidate list size, or other parameters to experiment with different instances of the problem. The provided candidate lists can also be replaced with custom ones for specific use cases.
 
-Acknowledgments
-This implementation is based on the Tabu Search algorithm.
-The script uses the Python random module for generating random values.
-Authors
+## Note
+
+The implementation is designed for educational purposes and may require further optimization or modifications for more complex scenarios.
+
+## Contributing
+
+Feel free to contribute to this project by creating pull requests or opening issues on the GitHub repository.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgments
+
+- The implementation is based on the Tabu Search algorithm, a metaheuristic optimization technique.
+- The script uses the Python `random` module for generating random values.
+
+## Author
+
 Bouchana Hicham
